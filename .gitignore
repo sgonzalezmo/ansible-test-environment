@@ -1,2 +1,2 @@
 .vagrant/
-provisioning/master.retry
+playbooks/master.retry
