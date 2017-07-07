@@ -11,4 +11,15 @@
     - name: install the latest version of ansible
       yum:
         name: ansible
-        state: latest    
+        state: latest
+    - name: validate ansible installation
+      shell: ansible --version
+    - name: create ansible user and ssh key
+      user:
+        name: ansible
+        password: ansible
+        comment: "ansible user"
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+    - name: Downloading ansible user pub key
+      fetch: src=/home/ansible/.ssh/id_rsa.pub dest=tmp/id_rsa.tmp flat=yes
