@@ -9,6 +9,9 @@ Vagrant.configure(2) do |config|
     config.vm.provider "virtualbox" do |vb|
       vb.name = "ansible_master"
     end
+    config.vm.provision "ansible" do |ansible|
+      ansible.playbook = "provisioning/master.yml"
+    end
     config.vm.hostname = "ansiblemaster"
     config.vm.network :private_network, ip: "10.0.0.10"
   end
