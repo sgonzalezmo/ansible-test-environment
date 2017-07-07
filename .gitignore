@@ -1,2 +1,3 @@
 .vagrant/
 playbooks/master.retry
+playbooks/tmp/
