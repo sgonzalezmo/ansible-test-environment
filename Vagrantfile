@@ -1,5 +1,5 @@
 # Number of ansible slave nodes
-NODES = 2
+NODES = 1
 
 Vagrant.configure(2) do |config|
   # Specifying the box we wish to use
