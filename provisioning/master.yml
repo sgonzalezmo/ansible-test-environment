@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: Add repository
+    - name: add repository
       yum_repository:
         name: epel
         description: EPEL YUM repo
@@ -21,5 +21,5 @@
         comment: "ansible user"
         generate_ssh_key: yes
         ssh_key_bits: 2048
-    - name: Downloading ansible user pub key
+    - name: downloading ansible user pub key
       fetch: src=/home/ansible/.ssh/id_rsa.pub dest=tmp/id_rsa.tmp flat=yes
