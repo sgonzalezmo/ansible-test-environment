@@ -23,6 +23,9 @@ Vagrant.configure(2) do |config|
         end
         config.vm.hostname = "ansiblenode#{i}"
         config.vm.network :private_network, ip: "10.0.0.#{i + 10}"
+        config.vm.provision "ansible" do |ansible|
+          ansible.playbook = "playbooks/ansible-node.yml"
+        end
       end
     end
 end
