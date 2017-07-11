@@ -2,13 +2,8 @@
 - hosts: all
   become: true
   tasks:
-    - name: create ansible user
-      user:
-        name: ansible
-        password: ansible
-        comment: "ansible user"
-    - name: upload ansible master user ssh key
+    - name: upload vagrant master user ssh key
       authorized_key:
-        user: ansible
+        user: vagrant
         state: present
         key: "{{ lookup('file', 'tmp/id_rsa.tmp') }}"
