@@ -10,12 +10,16 @@ Simple vagrantfile to provisioning test environment to evaluate the ansible capa
 
 ## Usage
 
-1. Run the commands below:
+1. Clone the repository:
 
 	```
 	git clone https://github.com/sgonzalezmo/ansible-test-environment.git
-	cd ansible-test-environment
-	vagrant up
+	```
+2. Edit de Vagrantfile and modify de NODES variable. Enter the number of nodes to be provisioned.
+
+        ```
+	# Number of ansible slave nodes
+        NODES = 1
 	```
 
 ## Testing
