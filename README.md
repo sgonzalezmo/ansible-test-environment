@@ -17,8 +17,8 @@ Simple vagrantfile to provisioning test environment to evaluate the ansible capa
 	```
 2. Edit de Vagrantfile and modify de NODES variable, enter the number of nodes to be provisioned.
 
-        ```
-        NODES = 1
+        ```
+	NODES = 1
 	```
 
 3. Run the commands below:
