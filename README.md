@@ -10,6 +10,13 @@ Simple vagrantfile to provisioning test environment to evaluate the ansible capa
 
 ## Usage
 
+1. Run the commands below:
+
+	```
+	git clone https://github.com/sgonzalezmo/ansible-test-environment.git
+	cd ansible-test-environment
+	vagrant up
+	```
 
 ## Testing
 
