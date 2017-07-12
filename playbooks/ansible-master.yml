@@ -12,6 +12,10 @@
       yum:
         name: ansible
         state: latest
+    - name: install git
+      yum:
+        name: git
+        state: latest
     - name: validate ansible installation
       shell: ansible --version
     - name: create vagrant ssh key
