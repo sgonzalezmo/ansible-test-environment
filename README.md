@@ -1,6 +1,6 @@
 # Ansible Test Environment
 
-Simple vagrantfile to provisioning test environment to evaluate the ansible capabilities
+Simple vagrantfile to provisioning test environment to evaluate the ansible capabilities.
 
 ## Requirements
 
@@ -35,6 +35,8 @@ vagrant up
 ```
 vagrant ssh ansible-master
 ```
+
+2. 
 
 ## License
 
