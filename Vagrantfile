@@ -3,7 +3,7 @@ NODES = 1
 
 Vagrant.configure(2) do |config|
   # Specifying the box we wish to use
-  config.vm.box = "centos/7"
+  config.vm.box = "centos/8"
 
   config.vm.define "ansible-master" do |config|
     config.vm.provider "virtualbox" do |vb|
